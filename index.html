@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 60%;
+            margin: auto;
+            
+            display: flex;
+            flex-direction: column;
+        }
+        .row1{
+            text-align: center;
+            background-color: rgb(97, 18, 97);
+            color: white;
+            padding-block: 20px;
+            margin-bottom: 10px;
+        }
+        .row2{
+            display: flex;
+            gap: 20px;
+            text-align: justify;
+            height: fit-content;
+           
+        }
+        .col1{
+            /* flex-grow: 0; */
+            flex: 1 1 25%;
+            background-color: aqua;
+            padding-inline: 10px;
+        }
+       
+        .col2{
+            /* flex-grow: 0; */
+            flex: 1 1 25%; 
+            background-color: aqua;
+            padding-inline: 10px;
+
+        }
+       
+        .col3{
+            /* flex-grow: 2; */
+            flex: 1 1 50%;
+            background-color: aqua;
+            padding-inline: 10px;
+            
+        }
+        .col1 h3, .col2 h3{
+            margin-block: 20px;
+            
+
+        }
+        .col1 p, .col2 p, .col3 .para{
+            line-height: 20px;
+        }
+        .col3 .btns{
+            margin-block: 20px;
+            
+        }
+        .col3{
+            display: flex;
+            flex-direction: column;
+        }
+        .btns{
+            display: flex;
+            column-gap: 10px;
+            flex-wrap: wrap;
+
+        }
+        button{
+            flex-basis: 20%;
+            flex-grow: 1;
+            margin-bottom: 10px;
+            padding-block: 5px;
+            border-radius: 5px;
+            /* border: none; */
+        }
+        .para p{
+            margin-bottom: 10px;
+        }
+
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <h1>Complex Flexbox Example.</h1>
+        </div>
+        <div class="row2">
+            <div class="col1">
+                <h3>First Article</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis dicta, beatae ab commodi quae porro! Numquam, unde voluptates. Impedit voluptate at labore molestias esse repellat repudiandae soluta veritatis praesentium? Animi.</p>
+                
+
+            </div>
+            <div class="col2">
+                <h3>Second Article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ad illum dolore nobis molestiae laborum est aliquid quia excepturi, tempore necessitatibus dolor perferendis? Similique, repellendus ad a officiis dolorum id.</p>
+            </div>
+            <div class="col3">
+                <div class="btns">
+                    <button>Smile</button>
+                    <button>Laugh</button>
+                    <button>Wink</button>
+                    <button>Shrug</button>
+                    <button>Blush</button>
+                </div>
+                <div class="para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed officiis qui, fuga similique reprehenderit dolorem ex voluptate eveniet odit corrupti libero provident reiciendis debitis aliquid, at explicabo sint, veniam quisquam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nulla sit, fuga cum recusandae vel qui nisi illo perferendis similique voluptatibus omnis itaque praesentium. Corporis debitis sed expedita sint aliquid!</p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
